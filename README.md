@@ -4,7 +4,7 @@ Hi, this is our first program or initial concept developed using Vue.js tools.
 https://vuejs.org/guide/quick-start.html#try-vue-online
 
 
-# Instalation
+## Instalation
 
 link:: https://cli.vuejs.org/#getting-started
 
@@ -13,7 +13,7 @@ link:: https://cli.vuejs.org/#getting-started
 ~npm install -g @vue/cli
 ```
 
-# Criação do projeto
+## Criação do projeto
 ```
 vue create nome_do_diretorio
 ```
@@ -31,3 +31,68 @@ cd nome_diretorio
 
 npm run sreve ou yarn serve
 ```
+
+
+## Utilitários
+Site para icons
+https://icones.js.org/
+
+
+## Concept of SFC
+
+SFC (Single-File Component) é um formato de arquivo do Vue que encapsula a lógica, estilização e marcação de um componente em um único arquivo. É uma funcionalidade que define o Vue como framework. 
+
+Estrutura padrão
+
+- Arquivo de component "Componente.vue"
+```
+<template> 
+    <header>
+        <div>
+            <p>Conteúdo escrito!</p>
+        </div>
+    </header>
+</template>
+
+<script>
+    export default{
+
+    }
+</script>
+
+<style>
+header{
+    background-color: #000;
+}
+</style>
+
+```
+
+- Arquivo prinicipal "App.vue"
+<template>
+  <TheHeader/>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/>
+</template>
+
+<script>
+import Componente from './components/Componente.vue';
+
+export default {
+  name: 'App',
+  components: {
+    Componente    
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>

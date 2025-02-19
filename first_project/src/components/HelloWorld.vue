@@ -55,4 +55,8 @@ li {
 a {
   color: #42b983;
 }
+.icon_click{
+  right: 100px;
+  width: 50px;
+}
 </style>
