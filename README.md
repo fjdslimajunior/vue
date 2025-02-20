@@ -29,7 +29,11 @@ Abrir interface de criação de projeto na página web
 ```
 cd nome_diretorio
 
-npm run sreve ou yarn serve
+npm run sreve 
+
+ou 
+
+yarn serve
 ```
 
 
@@ -76,7 +80,7 @@ header{
 </template>
 
 <script>
-import Componente from './components/Componente.vue';
+import Componente from './components/Componente.vue'
 
 export default {
   name: 'App',
@@ -96,3 +100,30 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+
+
+## Diretivas
+As diretivas são instruções dadas ao elemento html para resolução de problema.
+
+Ex: v-show="", v-if="", v-else=if="", v-else=""
+
+<template>
+  <TheHeader
+    v-show="showHeader"
+  />
+</template>
+
+<script>
+  export default {
+    name: 'App'
+    components: {
+      TheHeader
+    }
+  },
+  data() {
+    return{
+      showHeader: false
+    }
+  }
+</script>
