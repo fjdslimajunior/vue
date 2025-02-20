@@ -73,6 +73,8 @@ header{
 ```
 
 - Arquivo prinicipal "App.vue"
+
+```
 <template>
   <TheHeader/>
   <img alt="Vue logo" src="./assets/logo.png">
@@ -100,14 +102,14 @@ export default {
   margin-top: 60px;
 }
 </style>
-
+```
 
 
 ## Diretivas
 As diretivas são instruções dadas ao elemento html para resolução de problema.
 
 Ex: v-show="", v-if="", v-else=if="", v-else=""
-
+```
 <template>
   <TheHeader
     v-show="showHeader"
@@ -127,3 +129,4 @@ Ex: v-show="", v-if="", v-else=if="", v-else=""
     }
   }
 </script>
+```
