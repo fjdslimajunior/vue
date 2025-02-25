@@ -5,11 +5,11 @@
 
 
 
-  <img alt="Vue logo" src="./assets/logo.png">
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <TheMain 
   v-show="showMain"
   />
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld v-show="showHelloWorld" msg="Welcome to Your Vue.js App"/>
   <TheFooter 
   v-show="showFooter"
   />
@@ -31,7 +31,8 @@ export default {
   },
   data() {
     return{
-      showHeader: false,
+      showHelloWorld: false,
+      showHeader: true,
       showMain: false,
       showFooter: false
     }

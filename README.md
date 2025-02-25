@@ -130,3 +130,49 @@ Ex: v-show="", v-if="", v-else=if="", v-else=""
   }
 </script>
 ```
+
+
+
+## Uso do FOR (Introdução a Loops(diretiva v-for))
+
+//menção de fake API para consultar dados e testar o TODO. 
+Link: https://jsonplaceholder.typicode.com/
+Ex: Nesse exemplo é usado uma diretiva v-for para fazer um loop.
+<template>
+  <div v-for="obj in todos" 
+    v-bind:key="obj.id"
+  >
+
+    {{ obj.title}}
+
+</div>
+</template>
+
+
+## v-bind - da uma instrução para que o atributo seja dinâmico
+Ex Não dinâmico: 
+```
+<img
+  src="http://..." 
+  alt="Idetificação da imagem"
+>
+<img
+  v-bind:src="variavel-declarada-no-script-com-o-url-da-imagem" 
+  v-bind:alt="variavel-declarada-no-script"
+>
+
+<script>
+  export default {
+    name: 'App',
+    data() {
+      return {
+        variavel-declarada-no-script-com-o-url-do-src: 'html://..',
+        variavel-declarada-no-script-com-a-definicao-do-alt: 'Eu sou o alt da imagem',
+      }
+    }
+  }
+</script>
+
+```
+
+## Data Biding (v-bind)
